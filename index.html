@@ -10,7 +10,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
     <title>Loopstudios Website</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container max-w-6xl mx-auto px-6 py-12">
+        <nav class="flex items-center justify-between font-bold text-white">
+          <img src="images/logo.svg" alt="" />
+          <div class="hidden h-10 font-alata md:flex md:space-x-8">
+            <div class="group">
+              <a href="#">Home</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-bleue-200"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">About</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-bleue-200"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Events</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-bleue-200"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Careers</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-bleue-200"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Product</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-bleue-200"
+              ></div>
+            </div>
+          </div>
+          <!-- Hamburger Button -->
+          <div class="md:hidden">
+            <button
+              type="button"
+              id="menu-btn"
+              class="z-40 hamburger block md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <!-- Mobiel Menu -->
+          <div
+            id="menu"
+            class="absolute bg-black uppercase top-0 bottom-0 left-0 flex-col hidden self-end w-full min-h-screen px-1 pt-40 pl-12 space-y-3 text-lg text-white"
+          >
+            <a href="#" class="hover:text-pink-500">Home</a>
+            <a href="#" class="hover:text-pink-500">About</a>
+            <a href="#" class="hover:text-pink-500">Events </a>
+            <a href="#" class="hover:text-pink-500">Careers</a>
+            <a href="#" class="hover:text-pink-500">Product</a>
+          </div>
+        </nav>
+        <!-- Header -->
+        <div
+          class="max-w-lg mt-32 mb-32 p-4 font-sans border-2 border-white text-4xl uppercase md:p-10 md:m-32 md:text-justify md:text-6xl text-white"
+        >
+          Impresive Experiences That Deliver
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+  </body>
 </html>

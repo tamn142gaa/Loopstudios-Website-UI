@@ -553,3 +553,324 @@ video {
 [hidden] {
   display: none;
 }
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-alata {
+  font-family: Alata;
+}
+
+.font-sans {
+  font-family: Josephine Sans, sans-serif;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* Custom CSS */
+
+#hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-position: center;
+  }
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  pointer: cursor;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.hover\:text-pink-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.group:hover .group-hover\:border-b {
+  border-bottom-width: 1px;
+}
+
+@media (min-width: 768px) {
+  .md\:m-32 {
+    margin: 8rem;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:text-justify {
+    text-align: justify;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
